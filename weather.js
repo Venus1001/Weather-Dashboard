@@ -48,10 +48,11 @@ function searchCity(cityName) {
 
         var newDiv = $('<div>');
         newDiv.append(displayDate);
+        newDiv.append(weatherIcon);
         newDiv.append(temperature);
         newDiv.append(humidity);
         newDiv.append(windSpeed);
-        newDiv.append(weatherIcon);
+      
         $("#current-city").html(newDiv);
 
         var latitude = res.coord.lat;
@@ -113,9 +114,9 @@ function searchCity(cityName) {
             }
 
             DaysDiv.append(h5date);
+            DaysDiv.append(weatherIcon2);
             DaysDiv.append(pTemp);
             DaysDiv.append(pHum);
-            DaysDiv.append(weatherIcon2);
             $("#5-DayForcast").append(DaysDiv);
 
         }
