@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <title>Weather Dashbaord</title>
+</head>
+
+<body>
+    <div class="container-fluid text-center text-light bg-dark">
+        <h1>Weather Dashboard</h1>
+    </div>
+    <div class="container">
+        <div class="clearfix">
+            <div id="searchCity" class="col-4 float-left" style="width: 90; height: 30rem;">
+                <h4>Search for a City:</h4>
+                <form class="form-inline">
+                    <input id="city-input" class="form-control mr-sm-2" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button id="search-city" class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <form id="search-history" class="mt-1">
+                </form>
+
+            </div>
+            <div class="col-8 float-right">
+                <div id="currentCity" class="card bg-light text-dark p-2 rem shadow-lg p-3 mb-5 bg-white rounded"
+                    style="width: 80; height: 20rem;">
+                    <div id="current-city"></div>
+                    <div id="uv-display"></div>
+                </div>
+                <br>
+                <h3>5 Day Forcast:</h3>
+                <div id="5-DayForcast" class="row">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="weather.js"></script>
+</body>
+
+</html>

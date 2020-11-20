@@ -1,0 +1,33 @@
+h1{
+  background-color: lightblue;
+  color: grey;
+  font-family: 'Antic Slab', serif;
+}
+h2{
+  color: grey;
+  font-family: 'Antic Slab', serif;
+}
+
+h3{
+  color: grey;
+  font-family: 'Antic Slab', serif;
+}
+
+h4{
+  color: grey;
+  font-family: 'Antic Slab', serif;
+}
+
+#search-city{
+  color: white;
+  background-color: grey;
+}
+
+/* #searchCity{
+  background-color: whitesmoke;
+} */
+
+div{
+  background-color: whitesmoke;
+}
+
